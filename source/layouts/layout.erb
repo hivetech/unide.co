@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title><%= data.project.title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Show full screen on bookmarked iOS devices -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="description" content="<%= data.project.description %>">
+    <meta name="keywords" content="<%= data.project.keywords %>">
+    <meta name="author" content="<%= data.project.author %>">
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <link rel="stylesheet" href="stylesheets/flat-ui/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="stylesheets/flat-ui/bootstrap/bootstrap-responsive.css">
+    <link rel="stylesheet" href="stylesheets/flat-ui/flat-ui.css">
+
+    <!-- Using only with Flat-UI (free)-->
+    <link rel="stylesheet" href="stylesheets/icon-font.css">
+    <!-- end -->
+
+    <link rel="stylesheet" href="stylesheets/style.css">
+
+    <!-- http://kushagragour.in/lab/hint/ -->
+    <link rel="stylesheet" href="stylesheets/hint.css">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="javascripts/flat-ui/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- highlightjs.org -->
+    <link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/solarized_dark.min.css">
+    <script src="http://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+  </head>
+
+  <body background="images/<%= data.design.background %>">
+    <%= partial "header" %>
+
+    <%= yield %>
+    <%= partial "what" %>
+    <%= partial "confirm" %>
+    <%= partial "action" %>
+
+    <%= partial "footer" %>
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="javascripts/jquery-2.1.0.min.js"></script>
+    <script src="javascripts/flat-ui/bootstrap.min.js"></script>
+    <!--[if lt IE 8]>
+    <script src="javascripts/flat-ui/icon-font-ie7.js"></script>
+    <![endif]-->
+    <script src="javascripts/jquery.scrollTo-1.4.3.1-min.js"></script>
+    <script src="javascripts/jquery.parallax.min.js"></script>
+    <script src="javascripts/startup-kit.js"></script>
+    <script src="javascripts/jquery.backgroundvideo.min.js"></script>
+    <script src="javascripts/script.js"></script>
+
+    <!--http://wicky.nillia.ms/headroom.js/-->
+    <style type="text/css">
+      .headroom {position: fixed;top: 0;left: 0;right: 0;transition: all .2s ease-in-out;}
+      .headroom--unpinned {top: -100px;}
+      .headroom--pinned {top: 0;}
+    </style>
+    <script  type="text/javascript" src="https://rawgithub.com/WickyNilliams/headroom.js/master/dist/headroom.js"></script>      
+    <script  type="text/javascript" src="https://rawgithub.com/WickyNilliams/headroom.js/master/src/jQuery.headroom.js"></script>
+    <script type="text/javascript">
+      $(".navbar-fixed-top").headroom();
+    </script>
+  </body>
+</html>

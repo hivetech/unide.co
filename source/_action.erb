@@ -1,0 +1,54 @@
+<!-- content-8  -->
+<section class="content-8 v-center" id="action">
+  <div>
+    <div class="container">
+      <h2><%= data.content.action.title %></h2>
+      <br><br><br>
+      <img src="images/<%= data.design.action_image %>" width="397" height="193" alt="">
+      <div class="row">
+        <div class="span6 offset3">
+          <br><br><br>
+          <p><%= data.content.action.text %></p>
+
+          <!-- Strip payment support -->
+          <%#<button id="stripe-button" class="btn btn-large btn-clear">Sponsor</button>%>
+          <a class="btn btn-large btn-clear" href="#sign-up"><%= data.content.action.button %></a>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="span6 offset3">
+          <br><br><br>
+
+          &nbsp;&nbsp;&nbsp;
+          <a class="hint--bottom" data-hint="<%= data.content.action.survey %>" href="<%= data.services.survey_url %>">
+            <img class="icons" src="images/icons/chart.svg" width=100 height=100 alt=""></a>
+
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a class="hint--bottom" data-hint="<%= data.content.action.github %>" href="https://github.com/<%= data.project.github %>">
+            <img class="icons" src="images/icons/branch.svg" width=120 height=120 alt=""></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- content-13  -->
+<% if data.services.use_mailing %>
+  <section class="content-13 subscribe-form" id="sign-up">
+    <div class="container">
+      <div class="row">
+        <form action="<%= data.services.mailchimp_endpoint %>" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <input type="hidden" name="u" value="<%= ENV["MAILCHIMP_U"] %>">
+          <input type="hidden" name="id" value="<%= ENV["MAILCHIMP_LIST_ID"] %>">
+          <div class="span8">
+            <input type="text" placeholder="<%= data.content.action.placeholder %>" name="EMAIL" spellcheck="false">
+          </div>
+          <div class="span4">
+            <input class="btn btn-large btn-primary" type="submit"  name="subscribe" value="Get early access" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+<% end %>

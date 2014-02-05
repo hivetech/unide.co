@@ -1,0 +1,5 @@
+---
+use_mailing: true
+mailchimp_endpoint: http://unide.us3.list-manage2.com/subscribe/post
+
+survey_url: https://unide.typeform.com/to/o2AuWH

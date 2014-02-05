@@ -1,0 +1,66 @@
+<!-- content-7  -->
+<section class="content-7 v-center">
+  <div>
+    <div class="container">
+      <h3><%= data.content.overview_title %></h3>
+      <div class="row v-center">
+        <div class="span3">
+          <div class="span3">
+            <%= data.content.overview %>
+          </div>
+        </div>
+        <div class="span4">
+          <div class="span4 offset1">
+            <div class="screen-wrapper">
+              <div class="screen">
+                <img src="images/filter-screen.svg" alt="">
+                <img src="images/<%= data.design.overview %>" width="500" height="500" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="span3">
+          <div class="span3 offset1">
+            <% data.content.key_points.each_with_index do |point, index| %>
+              <h6><%= point.title %></h3>
+              <%= point.text %>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="content-7 v-center">
+  <div>
+    <div class="container">
+      <h3><%= data.content.showroom_title %></h3>
+      <div class=row>
+        <div class=span6>
+          <pre><code>
+$ unide fork --box TryGhost/Ghost               # Clone a full environment
+$ unide up --box you/Ghost --on 2-cores         # Boot it
+$ unide apply --layer oh-my-zsh --theme cloud   # Make yourself home
+$ unide apply --layer node --version 0.11.0     # Full stack control
+$ unide plug --box dockerfiles/redis            # Services at your service
+$ unide team --invite my_awesome_coding_buddy   # Social coding
+$ unide ssh
+...
+ ➜  ghost git:(master)  echo "Team is connected, services are available"
+ ➜  ghost git:(master)  echo $REDIS_HOST:$REDIS_PORT
+172.0.1.15:6379
+ ➜  ghost git:(master)  echo "And my favorite tools are here"
+ ➜  ghost git:(master)  git flow init
+ ➜  ghost git:(master)  # Happy coding !
+            </pre></code>
+          </div>
+          <div class=span6>
+            <br/><a class="hint--bottom" data-hint="Collaborative coding in the cloud, backed by the open-source community" href="https://github.com/<%= data.project.github %>/dna">
+            <img class="icons" src="images/lego-workers.jpg" width=510 height=510 alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

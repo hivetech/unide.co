@@ -1,0 +1,35 @@
+<!-- footer-3 -->
+<footer class="footer-3">
+  <div class="container">
+    <div class="row v-center">
+      <div class="span3">
+        <a class="brand" href="#">
+          <img src="images/<%= data.design.startup_brand %>" width=200 height=200 alt="Startup Logo">
+        </a>
+      </div>
+      <div class="additional-links">
+        <br><br><br><br>
+        <div class="span6" align="center">
+
+          <a class="hint--bottom" data-hint="<%= data.content.footer.contact_note %>" href="mailto:<%= data.project.contact %>">
+            <img class="icons" src="images/icons/mail.svg" width=70 height=70 alt=""></a>
+
+          <a class="hint--bottom" data-hint="<%= data.content.footer.github_note %>" href="https://github.com/<%= data.project.github %>">
+            <img class="icons" src="images/icons/github.svg" width=120 height=120 alt=""></a>
+
+          <a class="hint--bottom" data-hint="<%= data.content.footer.twitter_note %>" href="https://twitter.com/<%= data.project.twitter %>">
+            <img class="icons" src="images/icons/twitter.svg" width=70 height=70 alt=""></a>
+
+          <br><br><br><br>
+          <p align="center">
+          <%= data.content.footer.note %>
+          <img class="icons" src="images/icons/quote.svg" width=20 height=20 alt="">
+          </p>
+        </div>
+      </div>
+      <div class="span4">
+        <%= data.project.footer %>
+      </div>
+    </div>
+  </div>
+</footer>

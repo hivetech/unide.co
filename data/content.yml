@@ -1,0 +1,93 @@
+---
+# Main page
+headline: Develop like a hero
+bodyline: |
+  The best of open sources techs into smart<br/>
+  and collaborative development environments
+
+# Section 2 : Overview on the left
+overview_title: Discover unide
+overview: |
+  Develop in the cloud and leverage the power of community driven tools and
+  best practises. Any development stack from anywhere on any device with
+  anyone. Build and manage powerful environments for your team.
+# Section 2 : Key points on the right
+key_points:
+  - title: Terminal on steroids
+    text: |
+      Connect your terminal and enjoy pair-coding, on-demand environments,
+      hardware flexibility.
+  - title: Software as a Lego
+    text: |
+      Access hundred of services through simple environment variables and build in
+      seconds complex project infrastructure.
+  - title: Hacker friendly
+    text: |
+      Use the REST API to customize everything with popular frameworks and push
+      the community with your innovation.
+
+# Section 3 : Showroom
+showroom_title: A glance
+
+# Section 4 : Inspiration
+inspiration: |
+  Unleash brilliant ideas through<br class="hidden-phone">collaboration and
+  smart tools
+
+# Section 5 : Usecases
+usecases_title: Powerful side effects
+usecases_1:
+  - title: Github's project
+    image: icons/github2.svg
+    text: |
+      Github hosts amazing projects to try or contribute to. Skip
+      installation and just boot the dedicated environment to hack on
+      it right away
+  - title: Newbies kick-off
+    image: icons/power.svg
+    text: |
+      Start your development journey surrounded by the best of open-source,
+      smart people, and services already set up by experts.
+  - title: Learn practical
+    image: icons/learn.svg
+    text: |
+      Watch in real-time great coding sessions with fine permission control or
+      provide your students with a common pre-configured workspace.
+usecases_2:
+  - title: Freedom
+    image: icons/cloud.svg
+    text: |
+      Pair-code with your friends from a coffee shop in NYC, take a flight to
+      Paris, upgrade your computer and reconnect to find everything as you left
+      it.
+  - title: Production ready software
+    image: icons/gears.svg
+    text: |
+      As docker says : "The same container that a developer builds and tests
+      can run at scale, in production, on VMs, bare metal, OpenStack
+      clusters, public clouds and more"
+  - title: Complex architecture
+    image: icons/coffee.svg
+    text: |
+      Focus with confidence on your application. Environment variables hold
+      third party services informations and let you seamlessly connect to them.
+      No config, no wasting time.
+
+action:
+  title: Get involved
+  text: |
+    We want Unide to answer developer's true needs. That's why we make the
+    project open-source and seek contributions and advises of the community.
+    <br><br>
+    As an open lean startup you can code with us on github or shape the project
+    with our survey. Sign up to get notified as soon as we are ready
+  button: My brain can't handle the awesome. Sign me up !
+  github: Contribute brilliant code
+  survey: Share your insights
+  placeholder: Enter your email to get notified
+
+footer:
+  note: Handcrafted with passion and hardwork in Paris
+  twitter_note: Stay tune, follow us
+  github_note: Github Headquarter
+  contact_note: Some feedback ? Any questions ? Contact us, we would love to talk
