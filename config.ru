@@ -1,13 +1,18 @@
+require "rubygems"
+
 require "rack"
-require "rack/auth/basic"
-require "rack/contrib/not_found"
 require "rack/contrib/response_headers"
 require "rack/contrib/static_cache"
 require "rack/contrib/try_static"
 
 require 'newrelic_rpm'
 
+# Build the static site when the app boots
+`bundle exec middleman build`
+
+# https://docs.newrelic.com/docs/ruby/no-data-with-unicorn
 NewRelic::Agent.after_fork(:force_reconnect => true)
+
 
 # Properly compress the output if the client can handle it.
 use Rack::Deflater
@@ -28,12 +33,20 @@ use Rack::ResponseHeaders do |headers|
   headers["Surrogate-Key"] = "page"
 end
 
-# Try to find a static file that matches our request, since Middleman
-# statically generates everything.
+# Attempt to serve static HTML files
 use Rack::TryStatic,
-  :root => "build",
-  :urls => ["/"],
-  :try  => [".html", "index.html", "/index.html"]
+    :root => "build",
+    :urls => %w[/],
+    :try => ['.html', 'index.html', '/index.html']
 
 # 404 if we reached this point. Sad times.
-run Rack::NotFound.new(File.expand_path("../build/404.html", __FILE__))
+run lambda { |env|
+  [
+    404,
+    {
+      "Content-Type"  => "text/html",
+      "Cache-Control" => "public, max-age=60"
+    },
+    File.open("build/404/index.html", File::RDONLY)
+  ]
+}

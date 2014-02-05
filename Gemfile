@@ -8,3 +8,8 @@ gem "middleman-livereload", "~> 3.1.0"
 
 gem "middleman-minify-html"
 gem "middleman-smusher"
+
+gem "unicorn"
+gem "rack-contrib"
+
+gem 'newrelic_rpm'
