@@ -23,8 +23,10 @@ key_points:
       seconds complex project infrastructure.
   - title: Hacker friendly
     text: |
-      Use the REST API to customize everything with popular frameworks and push
-      the community with your innovation.
+      Get full control using the REST API, built on giant's shoulders :
+        <a href="docker.io">Docker</a>, <a href="www.saltstack.com">Saltstack</a>,
+        <a href="serfdom.io">Serf</a>, <a href="github.com">Github</a> ...
+
 
 # Section 3 : Showroom
 showroom_title: A glance
@@ -36,7 +38,7 @@ inspiration: |
 
 # Section 5 : Usecases
 usecases_title: Powerful side effects
-usecases_1:
+usecases:
   - title: Github's project
     image: icons/github2.svg
     text: |
@@ -46,20 +48,19 @@ usecases_1:
   - title: Newbies kick-off
     image: icons/power.svg
     text: |
-      Start your development journey surrounded by the best of open-source,
+      Start your development journey surrounded by helpful tools,
       smart people, and services already set up by experts.
   - title: Learn practical
     image: icons/learn.svg
     text: |
       Watch in real-time great coding sessions with fine permission control or
       provide your students with a common pre-configured workspace.
-usecases_2:
   - title: Freedom
     image: icons/cloud.svg
     text: |
       Pair-code with your friends from a coffee shop in NYC, take a flight to
-      Paris, upgrade your computer and reconnect to find everything as you left
-      it.
+      Paris, upgrade your computer or whatever and reconnect : everything is
+      here, as you left it.
   - title: Production ready software
     image: icons/gears.svg
     text: |
@@ -76,15 +77,17 @@ usecases_2:
 action:
   title: Get involved
   text: |
-    We want Unide to answer developer's true needs. That's why we make the
-    project open-source and seek contributions and advises of the community.
+    We want Unide to answer developer's real needs. That's why we make the
+    project open-source and seek contributions and advices from the community.
     <br><br>
-    As an open lean startup you can code with us on github or shape the project
-    with our survey. Sign up to get notified as soon as we are ready
-  button: My brain can't handle the awesome. Sign me up !
+    As an open lean startup you can <a href="https://github.com/hivetech">code
+    with us on github</a> or shape the project's roadmap with
+    <a href="https://unide.typeform.com/to/o2AuWH">our survey</a>.
+    Sign up to get notified as soon as we are ready !
+  button: I want more ! Sign me up !
   github: Contribute brilliant code
   survey: Share your insights
-  placeholder: Enter your email to get notified
+  placeholder: Enter your email
 
 footer:
   note: Handcrafted with passion and hardwork in Paris

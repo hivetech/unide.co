@@ -46,7 +46,8 @@ textarea {
   font-size: 14px;
 }
 a {
-  color: #16a085;
+  color: #000000;
+  font-weight: 700;
   text-decoration: none;
   -webkit-backface-visibility: hidden;
   -webkit-transition: 0.25s;
@@ -1422,7 +1423,7 @@ section * {
   line-height: 59.99999999999999px;
   font-size: 50px;
   font-weight: normal;
-  color: #ffffff; /*Writing color*/
+  color: #808080; /*Writing color*/
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
   letter-spacing: -1px;

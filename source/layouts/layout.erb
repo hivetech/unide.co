@@ -46,17 +46,6 @@
       ga('create', '<%= ENV["GOOGLE_ANALYTICS_ID"] %>', '<%= data.project.domain %>');
       ga('send', 'pageview');
     </script>
-  </head>
-
-  <body background="images/<%= data.design.background %>">
-    <%= partial "header" %>
-
-    <%= yield %>
-    <%= partial "what" %>
-    <%= partial "confirm" %>
-    <%= partial "action" %>
-
-    <%= partial "footer" %>
 
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="javascripts/jquery-2.1.0.min.js"></script>
@@ -69,6 +58,18 @@
     <script src="javascripts/startup-kit.js"></script>
     <script src="javascripts/jquery.backgroundvideo.min.js"></script>
     <script src="javascripts/script.js"></script>
+  </head>
+
+  <body background="images/<%= data.design.background %>">
+    <%= partial "header" %>
+
+    <%= yield %>
+    <%= partial "what" %>
+    <%= partial "confirm" %>
+    <%= partial "action" %>
+
+    <%= partial "footer" %>
+
 
     <!--http://wicky.nillia.ms/headroom.js/-->
     <style type="text/css">
@@ -82,5 +83,7 @@
       $(".navbar-fixed-top").headroom();
     </script>
 
+    <!-- http://cferdinandi.github.io/smooth-scroll/ -->
+    <script src="javascripts/smooth-scroll.js"></script>
   </body>
 </html>

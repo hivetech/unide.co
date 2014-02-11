@@ -16,16 +16,7 @@
     <h2><%= data.content.usecases_title %></h2>
     <div class=row>
       <br><br><br><br><br><br>
-      <% data.content.usecases_1.each_with_index do |usecase, index| %>
-        <div class=span4>
-          <img src="images/<%= usecase.image %>" width="70" height="70" alt="">
-          <h3><%= usecase.title %></h3>
-          <p><%= usecase.text %></p>
-        </div>
-      <% end %>
-    </div>
-    <div class=row>
-      <% data.content.usecases_2.each_with_index do |usecase, index| %>
+      <% data.content.usecases.each_with_index do |usecase, index| %>
         <div class=span4>
           <img src="images/<%= usecase.image %>" width="70" height="70" alt="">
           <h3><%= usecase.title %></h3>

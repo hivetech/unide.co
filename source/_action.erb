@@ -12,7 +12,7 @@
 
           <!-- Strip payment support -->
           <%#<button id="stripe-button" class="btn btn-large btn-clear">Sponsor</button>%>
-          <a class="btn btn-large btn-clear" href="#sign-up"><%= data.content.action.button %></a>
+          <a data-scroll data-speed="500" data-easing="easeInOutCubic" data-url="true" class="btn btn-large btn-clear" href="#sign-up"><%= data.content.action.button %></a>
 
         </div>
       </div>
@@ -45,7 +45,7 @@
             <input type="text" placeholder="<%= data.content.action.placeholder %>" name="EMAIL" spellcheck="false">
           </div>
           <div class="span4">
-            <input class="btn btn-large btn-primary" type="submit"  name="subscribe" value="Get early access" />
+            <input class="btn btn-large btn-primary" type="submit"  name="subscribe" value="<%= data.project.action_button %>" />
           </div>
         </form>
       </div>
