@@ -1429,13 +1429,13 @@ section * {
   letter-spacing: -1px;
 }
 .content-13.subscribe-form input[type="text"]:-moz-placeholder {
-  color: #ffffff;
+  color: #808080;
 }
 .content-13.subscribe-form input[type="text"]::-webkit-input-placeholder {
   color: #808080;
 }
 .content-13.subscribe-form input[type="text"].placeholder {
-  color: #ffffff;
+  color: #808080;
 }
 .content-13.subscribe-form input[type="text"]::-webkit-input-placeholder {
   font-weight: 500;

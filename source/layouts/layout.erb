@@ -22,6 +22,7 @@
     <!-- end -->
 
     <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/image.css">
 
     <!-- http://kushagragour.in/lab/hint/ -->
     <link rel="stylesheet" href="stylesheets/hint.css">
@@ -30,11 +31,6 @@
     <!--[if lt IE 9]>
     <script src="javascripts/flat-ui/html5shiv.js"></script>
     <![endif]-->
-
-    <!-- highlightjs.org -->
-    <link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/solarized_dark.min.css">
-    <script src="http://yandex.st/highlightjs/8.0/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
 
     <!-- Google analytics -->
     <script>
@@ -58,6 +54,23 @@
     <script src="javascripts/startup-kit.js"></script>
     <script src="javascripts/jquery.backgroundvideo.min.js"></script>
     <script src="javascripts/script.js"></script>
+
+    <!-- http://markgoodyear.com/2013/01/scrollup-jquery-plugin/ -->
+    <script src="javascripts/jquery.scrollUp.min.js"></script>
+    <script>
+      $(function(){
+        $.scrollUp({
+          scrollName: 'scrollUp', // Element ID
+          topDistance: '500', // Distance from top before showing element (px)
+          topSpeed: 300, // Speed back to top (ms)
+          animation: 'fade', // Fade, slide, none
+          animationInSpeed: 200, // Animation in speed (ms)
+          animationOutSpeed: 200, // Animation out speed (ms)
+          scrollText: '', // Text for element
+          activeOverlay: true, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+        });
+      });
+    </script>
   </head>
 
   <body background="images/<%= data.design.background %>">
@@ -69,7 +82,6 @@
     <%= partial "action" %>
 
     <%= partial "footer" %>
-
 
     <!--http://wicky.nillia.ms/headroom.js/-->
     <style type="text/css">
@@ -85,5 +97,10 @@
 
     <!-- http://cferdinandi.github.io/smooth-scroll/ -->
     <script src="javascripts/smooth-scroll.js"></script>
+
+    <!-- highlightjs.org -->
+    <link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/solarized_dark.min.css">
+    <script src="http://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
   </body>
 </html>
