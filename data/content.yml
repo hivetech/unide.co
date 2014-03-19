@@ -38,7 +38,7 @@ inspiration: |
 
 # Section 5 : Usecases
 usecases_title: Powerful side effects
-usecases:
+usecases_1:
   - title: Github's project
     image: icons/github2.svg
     text: |
@@ -55,6 +55,8 @@ usecases:
     text: |
       Watch in real-time great coding sessions with fine permission control or
       provide your students with a common pre-configured workspace.
+
+usecases_2:
   - title: Freedom
     image: icons/cloud.svg
     text: |
