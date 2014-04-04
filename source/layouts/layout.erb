@@ -42,6 +42,17 @@
       ga('create', '<%= ENV["GOOGLE_ANALYTICS_ID"] %>', '<%= data.project.domain %>');
       ga('send', 'pageview');
     </script>
+    <!-- Hublo            -->
+    <script>
+      (function(){
+        var hb = document.createElement('script');
+        hb.type = 'text/javascript';
+        hb.async = true;
+        hb.src = "//cdn.hublo.co/532b1e414216a36824000055.js";
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(hb, s);
+      })();
+    </script>;
 
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="javascripts/jquery-2.1.0.min.js"></script>

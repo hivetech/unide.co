@@ -12,6 +12,7 @@ require 'newrelic_rpm'
 
 # https://docs.newrelic.com/docs/ruby/no-data-with-unicorn
 NewRelic::Agent.after_fork(:force_reconnect => true)
+#preload_app true
 
 
 # Properly compress the output if the client can handle it.

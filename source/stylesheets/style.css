@@ -834,7 +834,7 @@ section * {
 }
 .header-10-sub {
   position: relative;
-  top: 80px;
+  top: 60px;
   z-index: 50;
   height: 800px;
   color: white;
@@ -1178,11 +1178,10 @@ section * {
 .content-8 .v-center {
   margin-left: auto;
   margin-right: auto;
-  width: 89%;
+  width: 90%;
 }
 .content-8.v-center > div,
 .content-8 .v-center > div {
-  display: table-cell;
   vertical-align: middle;
   margin-top: 0;
   margin-bottom: 0;
